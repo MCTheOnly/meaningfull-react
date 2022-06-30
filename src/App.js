@@ -1,21 +1,23 @@
-import React, { Suspense } from 'react'
-import { Canvas, useThree } from "@react-three/fiber";
-import { OrbitControls } from '@react-three/drei';
+// import React, { Suspense } from 'react'
+// import { Canvas, useThree } from "@react-three/fiber";
+// import { OrbitControls } from '@react-three/drei';
 import './App.css'
+import Scene from './components/Scene';
 
-import Box from './components/Box'
+// import Box from './components/Box'
 
 function App() {
   return (
     <div className="App">
-      <Canvas className='webgl'>
+      <Scene />
+      {/* <Canvas className='webgl'>
         <OrbitControls />
         <ambientLight intensity={1} color={'#FFFFFF'} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Box></Box>
         </Suspense>
-      </Canvas>
+      </Canvas> */}
     </div>
   );
 }
